@@ -30,7 +30,7 @@ function WxrdListDisplay(props) {
         onChange={onChange}
       />
       <div className="list">
-        {filteredWxrds.map(wxrd => <div>{wxrd.getUuid()}</div>)}
+        {filteredWxrds.map(wxrd => <div>{wxrd.export()}</div>)}
       </div>
     </div>
   );
