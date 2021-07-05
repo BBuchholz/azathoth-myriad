@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react';
 
+
 function useDebouncedValue(value, wait) {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
@@ -14,6 +15,9 @@ function useDebouncedValue(value, wait) {
 function WxrdListDisplay(props) {
   const [query, setQuery] = useState('');
   const debouncedQuery = useDebouncedValue(query, 400);
+
+  const { XmlTransport } = require("@entomdt/myriad-core");
+  const xmlTransporter = XmlTransport();
   
   const onChange = event => setQuery(event.target.value);
 
@@ -30,7 +34,7 @@ function WxrdListDisplay(props) {
         onChange={onChange}
       />
       <div className="list">
-        {filteredWxrds.map(wxrd => <div>{wxrd.export()}</div>)}
+        {filteredWxrds.map(wxrd => <div>{xmlTransporter.exportWxrd(wxrd)}</div>)}
       </div>
     </div>
   );

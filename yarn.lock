@@ -1219,11 +1219,12 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@entomdt/myriad-core@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@entomdt/myriad-core/-/myriad-core-0.0.5.tgz#7063672e56e0a6638f05f3b1291fbc0bef789441"
-  integrity sha512-GdRGjw0D5nYBBPG23tBLpo/8HVBFRK/6BefH3ht+7Yup76BC+sxN7atJXH8p2PEP3LEuVvRN3ByEcxIAHzAUYA==
+"@entomdt/myriad-core@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@entomdt/myriad-core/-/myriad-core-0.0.7.tgz#7c5c9bcec8efa2c266bfd842c5bd95c52032983d"
+  integrity sha512-nAmpmgIwc3pc+N/pm/BVw9VXRJB1vFuzAmMnfolBBwI519wGmbT1QhIFL+CcBPQWwB7Z+UfGwOb4DjLSNy/LXw==
   dependencies:
+    elementtree "^0.1.7"
     uuid "^8.3.2"
 
 "@eslint/eslintrc@^0.4.2":
@@ -4259,6 +4260,13 @@ electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.723:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.759.tgz#b0d652d376831470a4c230ba721da2427bfb996a"
   integrity sha512-nM76xH0t2FBH5iMEZDVc3S/qbdKjGH7TThezxC8k1Q7w7WHvIAyJh8lAe2UamGfdRqBTjHfPDn82LJ0ksCiB9g==
 
+elementtree@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/elementtree/-/elementtree-0.1.7.tgz#9ac91be6e52fb6e6244c4e54a4ac3ed8ae8e29c0"
+  integrity sha1-mskb5uUvtuYkTE5UpKw+2K6OKcA=
+  dependencies:
+    sax "1.1.4"
+
 elliptic@^6.5.3:
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
@@ -7133,7 +7141,7 @@ mime-types@^2.1.12, mime-types@^2.1.27, mime-types@~2.1.17, mime-types@~2.1.24:
   dependencies:
     mime-db "1.48.0"
 
-mime@1.6.0:
+mime@1.6.0, mime@^1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
@@ -9530,6 +9538,11 @@ sass-loader@^10.0.5:
     neo-async "^2.6.2"
     schema-utils "^3.0.0"
     semver "^7.3.2"
+
+sax@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/sax/-/sax-1.1.4.tgz#74b6d33c9ae1e001510f179a91168588f1aedaa9"
+  integrity sha1-dLbTPJrh4AFRDxeakRaFiPGu2qk=
 
 sax@~1.2.4:
   version "1.2.4"
